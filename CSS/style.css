@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+p {
+    font-size: 1.1rem;
+}
+.ResultBlock {
+    width: 100%;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    border-radius: 0 0 40px 40px;
+}
+.ResultBlock p {
+    color: hsl(241, 100%, 89%);
+    margin: 0.7rem 0;
+}
+.ResultBlock h1 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 0.4rem;
+    font-size: 1.5rem;
+}
+.ResultBlock_Circle p {
+    margin: 0.3rem 0 0;
+}
+.ResultBlock_Circle {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin: 0.5rem 0;
+    padding: 2rem 2.5rem;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ResultBlock_Score {
+    text-align: center;
+    margin: 0 2rem;
+}
+.ResultBlock_Circle > h1 {
+    transform: scale(2);
+    margin: 0.5rem 0;
+}
+.SummaryBlock {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.SummaryBlock h6 {
+    place-self: start;
+    margin: 1.5rem 0 1rem 2rem;
+}
+.SummaryBlock_Results {
+    display: flex;
+    width: 85%;
+    margin: 0.6rem;
+    padding: 1rem;
+    border-radius: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.SummaryBlock_Results > p {
+    color: hsla(224, 30%, 27%, 0.6);
+}
+.SummaryBlock_Results strong {
+    color: hsla(0, 0%, 0%, 0.8);
+}
+.Reaction {
+    background: hsla(0, 100%, 67%, 0.2);
+    color: hsl(0, 100%, 67%);
+}
+.Memory {
+    background: hsla(39, 100%, 56%, 0.2);
+    color: hsl(39, 100%, 56%);
+}
+.Verbal {
+    background: hsla(166, 100%, 37%, 0.2);
+    color: hsl(166, 100%, 37%);
+}
+.Visual {
+    background: hsla(234, 85%, 45%, 0.2);
+    color: hsl(234, 85%, 45%);
+}
+.SummaryBlock_Results img {
+    margin: 0 0.5rem;
+}
+.ResultParragraph {
+    display: flex;
+}
+.SummaryBlock input {
+    color: hsl(0, 0%, 100%);
+    background: hsl(224, 30%, 27%);
+    margin: 1rem;
+    padding: 1rem 0;
+    width: 85%;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.1rem;
+    font-family: inherit;
+}
+.SummaryBlock input:hover {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+
+@media screen and (min-width: 700px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    section {
+        display: flex;
+        border-radius: 40px;
+        box-shadow: 1px 1px 20px hsl(241, 100%, 89%);
+    }
+    .ResultBlock {
+        border-radius: 40px;
+        max-width: 20rem;
+        padding: 2.5rem 2rem;
+    }
+    .SummaryBlock {
+        width: 20rem;
+        border-radius: 40px;
+    }
+    .SummaryBlock_Results {
+        padding: 0.7rem;
+    }
+    .SummaryBlock input {
+        padding: 0.7rem;
+    }
+}
